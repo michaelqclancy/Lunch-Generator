@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>What's For Lunch Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="lunch.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="lunch-background">
+                <h1><strong>What's For Lunch Generator</strong></h1>
+                Struggling to decide what to eat?<br>
+                Let us decide for you!<br><br>
+                
+                <h3>I'm looking for something...</h3>
+            
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <button class="lunch-choice-off" id="spicy" value="0" onclick="toggle('spicy')">Spicy...</button>
+                    <button class="lunch-choice-off" id="familiar" value="0" onclick="toggle('familiar')">Familiar...</button>
+                    <button class="lunch-choice-off" id="nonAmerican" value="0" onclick="toggle('nonAmerican')">International...</button>
+                    <button class="lunch-choice-off" id="cheap" value="0" onclick="toggle('cheap')">Affordable...</button>
+                    <button class="lunch-choice-off" id="quick" value="0" onclick="toggle('quick')">Fast...</button>
+                    <button class="lunch-choice-off" id="nonAnimal" value="0" onclick="toggle('nonAnimal')">Plant Based...</button>
+                    <button class="lunch-choice-off" id="filling" value="0" onclick="toggle('filling')">Filling...</button>
+                </div>
+                <br>
+                <button class="lunch-button" onclick="filter()">Pick For Me</button><br><br>
+                <div id="result" style="display:none;">
+                    <hr>
+                    <br>
+                    <button class="lunch-button" id="output" onclick="find()"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
